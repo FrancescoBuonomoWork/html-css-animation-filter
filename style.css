@@ -44,7 +44,7 @@
     background: red;
 }
 .ex-5-square:hover {
-   width: ;
+    
 }
 .ex-5-square:active {
     
@@ -54,6 +54,14 @@
 }
 .ex-6-img:hover{
     filter: grayscale(1);
+}
+.ex-8-img {
+    transition: 2s;
+}
+.ex-8-img:hover {
+    border-radius: 20px;
+    filter: saturate(1) sepia(1);
+    
 }
 .ex-9-img {
     margin: 50px 100px;
