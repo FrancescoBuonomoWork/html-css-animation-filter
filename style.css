@@ -123,6 +123,7 @@
     line-height: 70px;
     text-align: center;
     text-decoration: none;
+    
 }
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
@@ -131,6 +132,8 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    
+    
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -140,6 +143,34 @@
     width: 60px;
     height: 20px;
 }
-    /* Svolgimento esercizio  */
+.ex-12-button:hover
+ .ex-12-top-white
+ {
+   animation: move 1s linear ;
+}   
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: move-negative 1s linear ;
+}
 
-
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes move-negative {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
