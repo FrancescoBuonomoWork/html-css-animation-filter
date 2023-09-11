@@ -84,7 +84,7 @@
         transform:rotate(0deg);
     }
     to {
-        transform:rotate(360deg);
+        transform:rotate(-360deg);
     }
 }
 
@@ -146,13 +146,15 @@
 .ex-12-button:hover
  .ex-12-top-white
  {
-   animation: move 1s linear ;
+   /* animation: move 1s linear ; */
+   animation: slide-top-12 1s linear alternate 2;
 }   
 .ex-12-button:hover .ex-12-bottom-white{
-    animation: move-negative 1s linear ;
+    /* animation: move-negative 1s linear ; */
+    animation: slide-bottom-12 1s linear alternate 2;
 }
 
-@keyframes move {
+/* @keyframes move {
     0% {
         transform: translateX(0);
     }
@@ -173,4 +175,23 @@
     100% {
         transform: translateX(0);
     }
+} */
+@keyframes slide-top-12 {
+    0% {
+       left:10%
+    }
+    100% {
+       left: 60%;
+    }
 }
+
+@keyframes slide-bottom-12 {
+    0% {
+       right:20%
+    }
+    100% {
+       right: 60%;
+    }
+}
+
+
